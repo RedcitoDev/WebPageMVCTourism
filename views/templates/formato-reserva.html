@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href=$urlBase />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato de Reservación</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: "Open Sans";
+        src: url($urlBasemedios/fonts/OpenSans/OpenSans-Regular.ttf);
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "Open Sans";
+        src: url($urlBasemedios/fonts/OpenSans/OpenSans-Medium.ttf);
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: "Open Sans";
+        src: url($urlBasemedios/fonts/OpenSans/OpenSans-SemiBold.ttf);
+        font-weight: bold;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        font-size: 1.05rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-block: 0rem;
+        margin: 0.5rem 0;
+    }
+    
+    .contenedor-principal {
+        position: relative;
+        width: 120rem;
+        height: 155rem;
+        overflow: hidden;
+    }
+
+    .contenedor-principal .background {
+        width: 100%;
+        height: auto;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: -1;
+    }
+
+    .contenedor-principal .formasuperiorazulclaro {
+        width: 4rem;
+        height: 30rem;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .contenedor-principal .formalateralizquierdaazulobscuro {
+        width: 1.5rem;
+        height: 117.5rem;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .contenedor-principal .formainferiorazulclaro {
+        width: 100%;
+        height: auto;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .contenedor-principal .formalateralderechaazulobscuro {
+        width: 1.5rem;
+        height: 135rem;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .contenedor-principal .logo {
+        width: 22.5rem;
+        height: auto;
+        content: '';
+        position: absolute;
+        top: 15rem;
+        left: 7.5rem;
+
+        transform: translateY(-60%);
+    }
+
+    .contenedor-principal .slogan {
+        width: auto;
+        height: 80rem;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 16.5rem;
+
+        transform: translateY(-60%);
+    }
+
+    .contenedor-datos {
+        content: '';
+        position: absolute;
+        left: 37.5rem;
+        top: 4.5rem;
+        margin-right: 5rem;
+    }
+
+    .contenedor-datos p,
+    .contenedor-datos a {
+        color: #4d4d4d;
+    }
+
+    .v_a-top {
+        vertical-align: top;
+    }
+
+    .d-inline_block {
+        display: inline-block;
+    }
+
+    .fila {
+        width: 100%;
+        display: block;
+        margin-bottom: 1.25rem;
+    }
+
+    .fila > *:not(:first-child) {
+        margin-left: 1rem;
+    }
+
+    .m-0 {
+        margin: 0;
+    }
+
+    .contenedor-txt-input {
+        display: inline-block;
+    }
+
+    .w-10 {
+        width: 10rem;
+    }
+
+    .w-14 {
+        width: 14rem;
+    }
+
+    .input-border {
+        display: inline-block;
+        border-bottom: solid 2px #a6a6a6;
+        background-color: #f4f4f4;
+        overflow: hidden;
+        min-height: 2.75rem;
+        max-height: 2.75rem;
+        text-align: center;
+        position: relative;
+    }
+
+    .input-border.fecha {
+        width: 16rem;
+    }
+
+    .input-border.folio {
+        margin-left: 0;
+        width: 16rem;
+        height: 3rem;
+    }
+
+    .input-bool,
+    .input-qty {
+        width: 3rem;
+    }
+
+    .input-txt-small {
+        width: 7rem;
+    }
+
+    .input-txt-medium {
+        width: 12rem;
+    }
+
+    .input-txt-large {
+        width: 15rem;
+    }
+
+    footer {
+        content: '';
+        position: absolute;
+        top: 127.5rem;
+        left: 3rem;
+    }
+
+    .notas-footer {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 1rem;
+        text-align: justify;
+        width: 22.5%;
+    }
+
+    .notas-footer h3 {
+        text-align: center;
+    }
+
+    .notas-footer p {
+        font-weight: 500;
+    }
+</style>
+
+<body>
+    <div class="contenedor-principal">
+        <img class="background" src=$urlBasemedios/formato-reservacion/Background.jpg alt="Background">
+        <img class="formasuperiorazulclaro" src=$urlBasemedios/formato-reservacion/formasuperiorazulclaro.png alt="formasuperiorazulclaro">
+        <img class="formalateralizquierdaazulobscuro" src=$urlBasemedios/formato-reservacion/formalateralizquierdaazulobscuro.png alt="formalateralizquierdaazulobscuro">
+        <img class="formainferiorazulclaro" src=$urlBasemedios/formato-reservacion/formainferiorazulclaro.png alt="formainferiorazulclaro">
+        <img class="formalateralderechaazulobscuro" src=$urlBasemedios/formato-reservacion/formalateralderechaazulobscuro.png alt="formalateralderechaazulobscuro">
+        <img class="logo" src=$urlBasemedios/formato-reservacion/Logo.png alt="Logo">
+        <img class="slogan" src=$urlBasemedios/formato-reservacion/slogan.png alt="slogan">
+
+        <div class="contenedor-datos">
+            <div class="fila" style="height: 10rem;">
+                <div style="vertical-align: top; display: inline-block; width: 49%;">
+                    <p style="width: 90%;">Pre reservación del certificado vacacional y autorización de cargo a tarjetas de crédito/debito</p>
+
+                    <div class="d-inline_block">
+                        <p class="d-inline_block v_a-top">Fecha: </p>
+                        <div class="input-border fecha v_a-top">
+                            <p>$fecha</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="vertical-align: top; display: inline-block; width: 24%;">
+                    <p style="text-transform: uppercase; font-size: 100%; width: 16rem; margin-left: auto; margin-bottom: 25px;">N° de Referencia</p>
+                    <div class="input-border folio" style="display: block; margin-left: auto;">
+                        <p>$noFolioHotelbeds</p>
+                    </div>
+                </div>
+
+                <div style="vertical-align: top; display: inline-block; width: 24%;">
+                    <p style="text-transform: uppercase; font-size: 100%; width: 16rem; margin-left: auto; margin-bottom: 25px;">N° de Folio (Lex Go Travel)</p>
+                    <div class="input-border folio" style="display: block; margin-left: auto;">
+                        <p>$noFolio</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fila">
+                <h2 class="m-0">INFORMACIÓN DEL CERTIFICADO VACACIONAL</h2>
+            </div>
+
+            <div class="fila" style="margin-bottom: 1.5rem">
+                <h3>Información del hotel </h3>
+            </div>
+
+            <div class="fila">
+                <div class="contenedor-txt-input" >
+                    <div class="d-inline_block v_a-top w-14">
+                        <p>Nombre del hotel: </p>
+                    </div>
+
+                    <div class="input-border " style="width: 21.5rem;">
+                        <p>$nombreHotel</p>
+                    </div>
+                </div>
+
+                <div class="contenedor-txt-input" >
+                    <div class="d-inline_block v_a-top w-14">
+                        <p>Categoria del hotel: </p>
+                    </div>
+
+                    <div class="input-border " style="width: 21.5rem;">
+                        <p>$categoriaHotel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="contenedor-txt-input" >
+                    <div class="d-inline_block v_a-top w-14">
+                        <p>Nombre del destino: </p>
+                    </div>
+
+                    <div class="input-border " style="width: 21.5rem;">
+                        <p>$destinationName</p>
+                    </div>
+                </div>
+
+                <div class="contenedor-txt-input" >
+                    <div class="d-inline_block v_a-top w-14">
+                        <p>N° de telefono del hotel: </p>
+                    </div>
+
+                    <div class="input-border " style="width: 21.5rem;">
+                        <a href="tel:$telefonoHotel">$telefonoHotel</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="contenedor-txt-input" >
+                    <div class="d-inline_block v_a-top w-14">
+                        <p>Dirección del hotel: </p>
+                    </div>
+
+                    <div class="input-border " style="width: 58.5rem;">
+                        <p>$direccionHotel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fila" style="margin-bottom: 1.5rem">
+                <h3>Información reserva</h3>
+            </div>
+
+            <div class="fila">
+                <div class="contenedor-txt-input">
+                    <div class="d-inline_block v_a-top w-14">
+                        <p>Fecha check-in (Entrada): </p>
+                    </div>
+
+                    <div class="input-border input-txt-small">
+                        <p>$checkIn</p>
+                    </div>
+                </div>
+
+                <div class="contenedor-txt-input">
+                    <div class="d-inline_block v_a-top w-14">
+                        <p>Fecha check-out (Salida): </p>
+                    </div>
+
+                    <div class="input-border input-txt-small">
+                        <p>$checkOut</p>
+                    </div>
+                </div>
+            </div>
+
+            $htmlHabitaciones
+
+            <div class="fila" style="margin-bottom: 1.5rem">
+                <h3>Información del cliente</h3>
+            </div>
+
+            <div class="fila">
+                <div class="contenedor-txt-input">
+                    <div class="d-inline_block v_a-top w-14">
+                        <p>Nombre del titular: </p>
+                    </div>
+    
+                    <div class="input-border" style="width: 58.85rem; ">
+                        <p>$txt-nombre-completo</p>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="fila">
+                <div class="contenedor-txt-input">
+                    <div class="d-inline_block v_a-top w-14">
+                        <p>Numero de telefono: </p>
+                    </div>
+
+                    <div class="input-border input-txt-medium">
+                        <a href="tel:$txt-numero-tel">$txt-numero-tel</a>
+                    </div>
+                </div>
+
+
+
+                <div class="contenedor-txt-input">
+                    <div class="d-inline_block v_a-top w-14">
+                        <p>Correo electronico: </p>
+                    </div>
+                    
+                    <div class="input-border input-txt-large">
+                        <a href="mailto:$txt-email">$txt-email</a>
+                    </div>
+                </div>
+            </div>
+
+            $htmlHuespedes
+        </div>
+        
+        <footer>
+            <p style="text-align: center; color: red;">Payable through $supplier_name, acting as agent for the service operating company, details of which can be provided upon request. VAT: $vatNumber Reference: $noFolioHotelbeds</p>
+            <div class="notas-footer">
+                <h3>Léase</h3>
+    
+                <p>
+                    El presente documento se deberá regresar firmada
+                    en un lapso no mayor a 24 horas (de no ser así el
+                    cliente no tiene derecho a replica) para aceptar las
+                    características de la reservación ya que con la
+                    carta de aceptación se emite su confirmación
+                    oficial con el hotel. Este folio está subsidiado por el
+                    departamento de Marketing de cada hotelera
+                    participante. Antes de firmar le pedimos lea
+                    detenidamente cada aspecto de este documento.
+                </p>
+            </div>
+
+            <div class="notas-footer">
+                <h3>Importante</h3>
+    
+                <p>
+                    Estimado cliente su pago aparecerá en su próximo
+                    estado de cuenta como DESARROLLO
+                    EMPRESARIAL MECAR S DE RL DE CV, favor de
+                    anexar una copia de la credencial de elector por
+                    ambos lados o pasaporte en caso de ser
+                    extranjero, toda la documentación debe ser de
+                    color y calidad legible para ser escaneada o
+                    fotografiada digitalmente.
+
+                </p>
+            </div>
+
+            <div class="notas-footer">
+                <h3>Atención</h3>
+    
+                <p>
+                    Estimado cliente para fines de controversia por
+                    parte del titular de la tarjeta de crédito, entiendo y
+                    acepto los términos y condiciones publicados en el
+                    sitio web. Acepto cubrir costos de impuestos hoteleros
+                    al momento de solicitar la reservación.
+                </p>
+            </div>
+            
+            <div class="notas-footer">
+                <h3>Comentarios</h3>
+    
+                <p>
+                    Fecha de viaje deseada solicitar a reservaciones de Lex Go Travel. Sólo
+                    hasta que haya recibido su número de hotel podrá
+                    viajar. Este paquete vacacional no es cancelable.
+                    No incluye impuestos. Sujeto a cambios sin previo
+                    aviso se aplican términos y condiciones publicados
+                    en https://lexgotravel.com/.
+                    Este documento no es una confirmación de
+                    fechas, se deberá cubrir un costo de impuestos
+                    hoteleros según la temporada. Paquete vacacional no reembolsable, es
+                    transferible.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<!-- Pagado a través de XXX, que actúa como agente de la empresa operadora del servicio, cuyos detalles se pueden proporcionar a pedido. VAT: YYY Referencia: ZZZ -->

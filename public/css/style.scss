@@ -1,0 +1,201 @@
+@import "bourbon";
+// Bootstrap !defaults
+$brand-primary: dodgerblue !default;
+$brand-success: #BCE954 !default;
+$brand-warning: gold !default;
+$brand-info: lightblue !default;
+$brand-danger: #F75D59 !default;
+$gray-darker: #222 !default;
+$gray-dark: lighten($gray-darker, 15%) !default;
+$gray: lighten($gray-darker, 35%) !default;
+$gray-light: lighten($gray-darker, 50%) !default;
+$gray-lighter: lighten($gray-darker, 75%) !default;
+$gray-dark: lighten($gray-darker, 90%) !default;
+// Switch config vars
+$switch-height: 2rem;
+$switch-width: $switch-height * 2;
+$switch-gutter: $switch-height/12;
+$switch-fillet: $switch-height;
+$switch-background-color-off: #ddd;
+$switch-forground-color-off: lighten($switch-background-color-off, 10%);
+$switch-background-gradient-off: none;
+$switch-label-color-off: darken($switch-background-color-off, 15%);
+$switch-background-shadow-off: 1px 1px 10px rgba(black, 0.2) inset;
+$switch-forground-shadow-off: none; //1px 1px 10px 0 rgba(black, 0.3);
+$switch-background-color-on: $brand-info;
+$switch-forground-color-on: $switch-forground-color-off; //lighten($switch-background-color-on, 10%);
+$switch-background-gradient-on: linear-gradient(rgba(white, 0.15), rgba(black, 0.2));
+$switch-label-color-on: #fff;
+$switch-background-shadow-on: 1px 1px 10px rgba(black, 0.3) inset;
+$switch-forground-shadow-on: 1px 1px 10px 0 rgba(black, 0.3);
+$switch-label-offset: $switch-gutter * 1.3;
+$switch-label-size: $switch-height * 0.35; //70%;
+$switch-transition: all 0.1s ease-in-out;
+// General page stuff
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+//@import url(https://fonts.googleapis.com/css?family=Lato|Roboto);
+* {
+    &,
+    &:before,
+    &:after {
+        @include box-sizing(border-box);
+    }
+}
+
+
+/**
+ * The switch widget!
+ * Usage:
+ *   <input type="checkbox" switch[="type"] id="toggleSwitch" />
+ *   <label for="toggleSwitch" data-on-label="On" data-off-label="Off"></label>
+ */
+
+@function brightness($color) {
+    // https://codepen.io/scottkellum/pen/qFvKd
+    $sum: red($color) + green($color) + blue($color);
+    @return percentage($sum / (255*3));
+}
+
+@mixin switch-style($type: false, $onColor: false, $offColor: false) {
+    @if $type {
+        input[switch="#{$type}"] {
+            @content;
+            @if $offColor {
+                &+label {
+                    background-color: $offColor;
+                    &:before {
+                        // content: "#{brightness($offColor)}";
+                        @if brightness($offColor) <=69% {
+                            color: #fff !important;
+                        }
+                        @else {
+                            color: grayscale(invert($onColor)) !important;
+                        }
+                    }
+                }
+            }
+            @if $onColor {
+                &:checked+label {
+                    background-color: $onColor;
+                    &:before {
+                        // content: "#{brightness($onColor)}";
+                        @if brightness($onColor) <=69% {
+                            color: #fff !important;
+                        }
+                        @else {
+                            color: grayscale(invert($onColor)) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin switch-base($height: $switch-height, $width: $switch-width) {
+    input[switch] {
+        display: none;
+        &+label {
+            font-size: 1em;
+            line-height: 1;
+            width: $switch-width;
+            height: $switch-height;
+            background-color: $switch-background-color-off;
+            background-image: $switch-background-gradient-off;
+            border-radius: $switch-fillet;
+            padding: $switch-gutter;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            box-shadow: $switch-background-shadow-off;
+            font-family: inherit;
+            @include transition($switch-transition);
+            &:before {
+                /* Label */
+                text-transform: uppercase;
+                color: $switch-label-color-off;
+                content: attr(data-off-label);
+                display: block;
+                font-family: inherit;
+                font-family: FontAwesome, inherit;
+                font-weight: 500;
+                font-size: $switch-label-size;
+                line-height: $switch-height - ($switch-label-offset*1.2);
+                position: absolute;
+                right: $switch-label-offset;
+                margin: $switch-label-offset;
+                top: 0;
+                text-align: center;
+                // outline: 1px dotted red;
+                min-width: ($switch-width/2) - ($switch-gutter*2);
+                overflow: hidden;
+                @include transition($switch-transition);
+            }
+            &:after {
+                /* Slider */
+                $sHeight: $switch-height - ($switch-gutter*2);
+                content: '';
+                position: absolute;
+                left: $switch-gutter;
+                background-color: $switch-forground-color-off;
+                box-shadow: $switch-forground-shadow-off;
+                border-radius: $switch-fillet;
+                height: $sHeight;
+                width: $sHeight;
+                @include transition($switch-transition);
+            }
+        }
+        &:checked+label {
+            background-color: $switch-background-color-on;
+            background-image: $switch-background-gradient-on;
+            box-shadow: $switch-background-shadow-on;
+            &:before {
+                color: $switch-label-color-on;
+                content: attr(data-on-label);
+                right: auto;
+                left: $switch-label-offset;
+            }
+            &:after {
+                left: ($switch-width/2) + $switch-gutter;
+                background-color: $switch-forground-color-on;
+                box-shadow: $switch-forground-shadow-on;
+            }
+        }
+    }
+}
+
+@include switch-base();
+@include switch-style(bool, $brand-success, desaturate($brand-danger, 10%));
+@include switch-style(default, $gray-light);
+@include switch-style(success, $brand-success);
+@include switch-style(warning, $brand-warning);
+//RESPONSIVE
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    div#hotel-info {
+        display: none;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    ...
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    ...
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    ...
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    ...
+}

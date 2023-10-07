@@ -1,0 +1,977 @@
+{
+  "from" : 1,
+  "to" : 1000,
+  "total" : 1,
+  "auditData" : {
+    "processTime" : "991",
+    "timestamp" : "2021-12-16 17:00:29.328",
+    "requestHost" : "10.197.40.74",
+    "serverId" : "hotel-content-api-756b8b844-zk4jx",
+    "environment" : "[gcpeuropewest1, NO_ZONE, k8s, java11]",
+    "release" : "",
+    "internal" : "fb554b7660c971b7"
+  },
+  "hotels" : [ {
+    "code" : 83708,
+    "name" : {
+      "languageCode" : "CAS",
+      "content" : "Howard Johnson 9 De Julio Avenue"
+    },
+    "description" : {
+      "languageCode" : "CAS",
+      "content" : "Este hotel urbano está situado en la Avenida del 9 de Julio, se encuentra a unos pasos del Obelisco. Está a minutos de Puerto Madero y San Telmo, a solo 30 minutos del aeropuerto internacional de Ezeiza y 20 minutos del Aeropuerto Jorge Newbery por autopista.\nLos servicios que ofrece incluyen vestíbulo con recepción 24 horas, ascensor, restaurante, instalaciones para conferencias, aparcamiento con cargo y conexión a Internet WI FI.\nLas habitaciones de la categoría estándar tiene cama queen (matrimonial) o twin (individuales) mientras las Ejecutivas poseen cama matrimonial y Late Check Out a las 6 pm sin costo, estan ubicadas en los ultimos pisos del hotel. El equipamiento incluye cierre y llave magnéticos, caja fuerte, teléfono de línea directa, acceso gratuito a Internet, minibar, TV por cable. Además, cuentan con amplias ventanas con doble aislamiento acústico que brindan calida luminosidad e isonorización. No se puede fumar en las habitaciones.\nEl hotel cuenta con gimnasio y ducha escocesa. El desayuno se sirve en forma de buffet en Malena restaurant."
+    },
+    "countryCode" : "AR",
+    "stateCode" : "BA",
+    "destinationCode" : "BUE",
+    "zoneCode" : 1,
+    "coordinates" : {
+      "longitude" : -58.3802,
+      "latitude" : -34.6134319
+    },
+    "categoryCode" : "4EST",
+    "categoryGroupCode" : "GRUPO4",
+    "chainCode" : "WYNDH",
+    "accommodationTypeCode" : "HOTEL",
+    "boardCodes" : [ "BB", "AI", "HB", "FB", "RO" ],
+    "segmentCodes" : [ 34, 100 ],
+    "address" : {
+      "languageCode" : "CAS",
+      "content" : "Bernardo De Irigoyen 432",
+      "street" : "Bernardo De Irigoyen 432"
+    },
+    "postalCode" : "01072",
+    "city" : {
+      "languageCode" : "CAS",
+      "content" : "Buenos Aires"
+    },
+    "email" : "reservas@hj9dejulio.com.ar",
+    "phones" : [ {
+      "phoneNumber" : "+541152229000",
+      "phoneType" : "PHONEBOOKING"
+    }, {
+      "phoneNumber" : "+541152229000",
+      "phoneType" : "PHONEHOTEL"
+    } ],
+    "rooms" : [ {
+      "roomCode" : "DBL.KG-NM",
+      "isParentRoom" : true,
+      "minPax" : 1,
+      "maxPax" : 5,
+      "maxAdults" : 4,
+      "maxChildren" : 4,
+      "minAdults" : 1,
+      "roomType" : "DBL",
+      "characteristicCode" : "KG-NM",
+      "roomFacilities" : [ {
+        "facilityCode" : 287,
+        "facilityGroupCode" : 60,
+        "indYesOrNo" : false,
+        "voucher" : false
+      }, {
+        "facilityCode" : 220,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "number" : 0,
+        "voucher" : false
+      } ],
+      "roomStays" : [ {
+        "stayType" : "BED",
+        "order" : "1",
+        "description" : "Bed room",
+        "roomStayFacilities" : [ {
+          "facilityCode" : 155,
+          "facilityGroupCode" : 61,
+          "number" : 1
+        } ]
+      } ],
+      "PMSRoomCode" : "NK11"
+    }, {
+      "roomCode" : "TWN.2B",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 4,
+      "maxAdults" : 4,
+      "maxChildren" : 3,
+      "minAdults" : 1,
+      "roomType" : "TWN",
+      "characteristicCode" : "2B"
+    }, {
+      "roomCode" : "ROO.ST-1",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 10,
+      "maxAdults" : 10,
+      "maxChildren" : 6,
+      "minAdults" : 1,
+      "roomType" : "ROO",
+      "characteristicCode" : "ST-1"
+    }, {
+      "roomCode" : "DBL.BS-3",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 5,
+      "maxAdults" : 4,
+      "maxChildren" : 4,
+      "minAdults" : 0,
+      "roomType" : "DBL",
+      "characteristicCode" : "BS-3"
+    }, {
+      "roomCode" : "SUI.KG",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 8,
+      "maxAdults" : 8,
+      "maxChildren" : 5,
+      "minAdults" : 1,
+      "roomType" : "SUI",
+      "characteristicCode" : "KG"
+    }, {
+      "roomCode" : "SUI.KG-NM",
+      "isParentRoom" : true,
+      "minPax" : 1,
+      "maxPax" : 8,
+      "maxAdults" : 8,
+      "maxChildren" : 5,
+      "minAdults" : 1,
+      "roomType" : "SUI",
+      "characteristicCode" : "KG-NM",
+      "roomFacilities" : [ {
+        "facilityCode" : 220,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "number" : 1,
+        "voucher" : false
+      }, {
+        "facilityCode" : 287,
+        "facilityGroupCode" : 60,
+        "indYesOrNo" : false,
+        "voucher" : false
+      } ],
+      "roomStays" : [ {
+        "stayType" : "LIV",
+        "order" : "1"
+      }, {
+        "stayType" : "BED",
+        "order" : "1",
+        "description" : "Bed room",
+        "roomStayFacilities" : [ {
+          "facilityCode" : 155,
+          "facilityGroupCode" : 61,
+          "number" : 1
+        } ]
+      } ],
+      "PMSRoomCode" : "SNK1"
+    }, {
+      "roomCode" : "SUI.DB",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 8,
+      "maxAdults" : 8,
+      "maxChildren" : 5,
+      "minAdults" : 1,
+      "roomType" : "SUI",
+      "characteristicCode" : "DB"
+    }, {
+      "roomCode" : "DBL.EJ",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 5,
+      "maxAdults" : 4,
+      "maxChildren" : 4,
+      "minAdults" : 1,
+      "roomType" : "DBL",
+      "characteristicCode" : "EJ",
+      "roomFacilities" : [ {
+        "facilityCode" : 220,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "number" : 0,
+        "voucher" : false
+      } ],
+      "roomStays" : [ {
+        "stayType" : "BED",
+        "order" : "1",
+        "description" : "Bed room",
+        "roomStayFacilities" : [ {
+          "facilityCode" : 150,
+          "facilityGroupCode" : 61,
+          "number" : 1
+        } ]
+      } ]
+    }, {
+      "roomCode" : "ROO.ST",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 10,
+      "maxAdults" : 10,
+      "maxChildren" : 6,
+      "minAdults" : 1,
+      "roomType" : "ROO",
+      "characteristicCode" : "ST"
+    }, {
+      "roomCode" : "ROO.BS",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 10,
+      "maxAdults" : 10,
+      "maxChildren" : 6,
+      "minAdults" : 1,
+      "roomType" : "ROO",
+      "characteristicCode" : "BS"
+    }, {
+      "roomCode" : "DBL.BS",
+      "isParentRoom" : true,
+      "minPax" : 1,
+      "maxPax" : 5,
+      "maxAdults" : 4,
+      "maxChildren" : 4,
+      "minAdults" : 1,
+      "roomType" : "DBL",
+      "characteristicCode" : "BS",
+      "roomFacilities" : [ {
+        "facilityCode" : 287,
+        "facilityGroupCode" : 60,
+        "indYesOrNo" : false,
+        "voucher" : false
+      }, {
+        "facilityCode" : 220,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "number" : 0,
+        "voucher" : false
+      } ],
+      "roomStays" : [ {
+        "stayType" : "BED",
+        "order" : "1",
+        "description" : "Bed room",
+        "roomStayFacilities" : [ {
+          "facilityCode" : 294,
+          "facilityGroupCode" : 61,
+          "number" : 1
+        } ]
+      } ],
+      "PMSRoomCode" : "BNQ1"
+    }, {
+      "roomCode" : "ROO.EY",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 10,
+      "maxAdults" : 10,
+      "maxChildren" : 6,
+      "minAdults" : 1,
+      "roomType" : "ROO",
+      "characteristicCode" : "EY"
+    }, {
+      "roomCode" : "DBL.NM-QN",
+      "isParentRoom" : true,
+      "minPax" : 1,
+      "maxPax" : 5,
+      "maxAdults" : 4,
+      "maxChildren" : 4,
+      "minAdults" : 1,
+      "roomType" : "DBL",
+      "characteristicCode" : "NM-QN",
+      "roomFacilities" : [ {
+        "facilityCode" : 287,
+        "facilityGroupCode" : 60,
+        "indYesOrNo" : false,
+        "voucher" : false
+      }, {
+        "facilityCode" : 220,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "number" : 0,
+        "voucher" : false
+      } ],
+      "roomStays" : [ {
+        "stayType" : "BED",
+        "order" : "1",
+        "description" : "Bed room",
+        "roomStayFacilities" : [ {
+          "facilityCode" : 294,
+          "facilityGroupCode" : 61,
+          "number" : 1
+        } ]
+      } ],
+      "PMSRoomCode" : "NQ11"
+    }, {
+      "roomCode" : "DBL.QN",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 5,
+      "maxAdults" : 4,
+      "maxChildren" : 4,
+      "minAdults" : 1,
+      "roomType" : "DBL",
+      "characteristicCode" : "QN"
+    }, {
+      "roomCode" : "ROO.EJ",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 10,
+      "maxAdults" : 10,
+      "maxChildren" : 6,
+      "minAdults" : 1,
+      "roomType" : "ROO",
+      "characteristicCode" : "EJ"
+    }, {
+      "roomCode" : "SUI.ST",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 8,
+      "maxAdults" : 8,
+      "maxChildren" : 5,
+      "minAdults" : 1,
+      "roomType" : "SUI",
+      "characteristicCode" : "ST"
+    }, {
+      "roomCode" : "ROO.2D",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 10,
+      "maxAdults" : 10,
+      "maxChildren" : 6,
+      "minAdults" : 1,
+      "roomType" : "ROO",
+      "characteristicCode" : "2D"
+    }, {
+      "roomCode" : "DBL.ST",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 5,
+      "maxAdults" : 4,
+      "maxChildren" : 4,
+      "minAdults" : 1,
+      "roomType" : "DBL",
+      "characteristicCode" : "ST",
+      "roomFacilities" : [ {
+        "facilityCode" : 20,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "indFee" : false,
+        "voucher" : false
+      }, {
+        "facilityCode" : 100,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "indFee" : false,
+        "voucher" : false
+      }, {
+        "facilityCode" : 287,
+        "facilityGroupCode" : 60,
+        "indYesOrNo" : false,
+        "voucher" : false
+      }, {
+        "facilityCode" : 295,
+        "facilityGroupCode" : 60,
+        "number" : 22,
+        "indYesOrNo" : true,
+        "voucher" : false
+      }, {
+        "facilityCode" : 300,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "indFee" : false,
+        "voucher" : false
+      }, {
+        "facilityCode" : 55,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "indFee" : false,
+        "voucher" : false
+      }, {
+        "facilityCode" : 170,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "voucher" : false
+      }, {
+        "facilityCode" : 190,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "indFee" : false,
+        "voucher" : false
+      }, {
+        "facilityCode" : 264,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "indFee" : false,
+        "voucher" : false
+      }, {
+        "facilityCode" : 120,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "indFee" : true,
+        "voucher" : false
+      }, {
+        "facilityCode" : 261,
+        "facilityGroupCode" : 60,
+        "indFee" : false,
+        "indYesOrNo" : true,
+        "voucher" : false
+      }, {
+        "facilityCode" : 250,
+        "facilityGroupCode" : 60,
+        "indYesOrNo" : false,
+        "voucher" : false
+      } ],
+      "roomStays" : [ {
+        "stayType" : "BED",
+        "order" : "1",
+        "description" : "Bed room"
+      } ]
+    }, {
+      "roomCode" : "ROO.2D-EJ",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 10,
+      "maxAdults" : 10,
+      "maxChildren" : 6,
+      "minAdults" : 1,
+      "roomType" : "ROO",
+      "characteristicCode" : "2D-EJ"
+    }, {
+      "roomCode" : "ROO.NM",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 10,
+      "maxAdults" : 10,
+      "maxChildren" : 6,
+      "minAdults" : 1,
+      "roomType" : "ROO",
+      "characteristicCode" : "NM"
+    }, {
+      "roomCode" : "DBL.EJ-QN",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 5,
+      "maxAdults" : 4,
+      "maxChildren" : 4,
+      "minAdults" : 1,
+      "roomType" : "DBL",
+      "characteristicCode" : "EJ-QN"
+    }, {
+      "roomCode" : "DBL.2B",
+      "isParentRoom" : false,
+      "minPax" : 1,
+      "maxPax" : 5,
+      "maxAdults" : 4,
+      "maxChildren" : 4,
+      "minAdults" : 1,
+      "roomType" : "DBL",
+      "characteristicCode" : "2B"
+    }, {
+      "roomCode" : "DBL.DB",
+      "isParentRoom" : true,
+      "minPax" : 1,
+      "maxPax" : 5,
+      "maxAdults" : 4,
+      "maxChildren" : 4,
+      "minAdults" : 1,
+      "roomType" : "DBL",
+      "characteristicCode" : "DB",
+      "roomFacilities" : [ {
+        "facilityCode" : 220,
+        "facilityGroupCode" : 60,
+        "indLogic" : true,
+        "number" : 0,
+        "voucher" : false
+      }, {
+        "facilityCode" : 287,
+        "facilityGroupCode" : 60,
+        "indYesOrNo" : false,
+        "voucher" : false
+      } ],
+      "roomStays" : [ {
+        "stayType" : "BED",
+        "order" : "1",
+        "description" : "Bed room",
+        "roomStayFacilities" : [ {
+          "facilityCode" : 150,
+          "facilityGroupCode" : 61,
+          "number" : 1
+        } ]
+      } ],
+      "PMSRoomCode" : "ND1"
+    } ],
+    "facilities" : [ {
+      "facilityCode" : 20,
+      "facilityGroupCode" : 10,
+      "order" : 1,
+      "number" : 2000,
+      "voucher" : false
+    }, {
+      "facilityCode" : 70,
+      "facilityGroupCode" : 10,
+      "order" : 1,
+      "indYesOrNo" : true,
+      "number" : 85,
+      "voucher" : false
+    }, {
+      "facilityCode" : 50,
+      "facilityGroupCode" : 10,
+      "order" : 1,
+      "number" : 12,
+      "voucher" : false
+    }, {
+      "facilityCode" : 132,
+      "facilityGroupCode" : 10,
+      "order" : 1,
+      "number" : 36,
+      "voucher" : false
+    }, {
+      "facilityCode" : 90,
+      "facilityGroupCode" : 10,
+      "order" : 1,
+      "number" : 44,
+      "voucher" : false
+    }, {
+      "facilityCode" : 100,
+      "facilityGroupCode" : 10,
+      "order" : 1,
+      "number" : 5,
+      "voucher" : false
+    }, {
+      "facilityCode" : 128,
+      "facilityGroupCode" : 10,
+      "order" : 1,
+      "number" : 19,
+      "voucher" : false
+    }, {
+      "facilityCode" : 10,
+      "facilityGroupCode" : 20,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 10,
+      "facilityGroupCode" : 30,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 50,
+      "facilityGroupCode" : 30,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 60,
+      "facilityGroupCode" : 30,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 80,
+      "facilityGroupCode" : 30,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 90,
+      "facilityGroupCode" : 30,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 10,
+      "facilityGroupCode" : 40,
+      "order" : 1,
+      "distance" : 1600,
+      "voucher" : false
+    }, {
+      "facilityCode" : 20,
+      "facilityGroupCode" : 40,
+      "order" : 1,
+      "distance" : 100,
+      "voucher" : false
+    }, {
+      "facilityCode" : 298,
+      "facilityGroupCode" : 60,
+      "order" : 1,
+      "indLogic" : false,
+      "number" : 1,
+      "voucher" : false
+    }, {
+      "facilityCode" : 295,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indYesOrNo" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 320,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indFee" : true,
+      "indYesOrNo" : true,
+      "amount" : 10,
+      "currency" : "USD",
+      "applicationType" : "US",
+      "voucher" : true
+    }, {
+      "facilityCode" : 330,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : false,
+      "indFee" : true,
+      "amount" : 10,
+      "currency" : "USD",
+      "applicationType" : "US",
+      "voucher" : false
+    }, {
+      "facilityCode" : 30,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indYesOrNo" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 260,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "timeFrom" : "14:00:00",
+      "timeTo" : "00:00:00",
+      "voucher" : true
+    }, {
+      "facilityCode" : 390,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "timeFrom" : "12:00:00",
+      "timeTo" : "12:00:00",
+      "voucher" : false
+    }, {
+      "facilityCode" : 564,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 550,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indFee" : false,
+      "indYesOrNo" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 560,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 270,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 280,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 285,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 290,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 505,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 525,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 40,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 50,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 70,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 585,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 470,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 515,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 559,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 568,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 578,
+      "facilityGroupCode" : 70,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 130,
+      "facilityGroupCode" : 71,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 200,
+      "facilityGroupCode" : 71,
+      "order" : 1,
+      "indLogic" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 560,
+      "facilityGroupCode" : 71,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 575,
+      "facilityGroupCode" : 71,
+      "order" : 1,
+      "indLogic" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 170,
+      "facilityGroupCode" : 72,
+      "order" : 1,
+      "indLogic" : true,
+      "number" : 1,
+      "voucher" : false
+    }, {
+      "facilityCode" : 575,
+      "facilityGroupCode" : 72,
+      "order" : 1,
+      "indLogic" : true,
+      "number" : 1,
+      "voucher" : false
+    }, {
+      "facilityCode" : 120,
+      "facilityGroupCode" : 74,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 40,
+      "facilityGroupCode" : 80,
+      "order" : 1,
+      "indLogic" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 30,
+      "facilityGroupCode" : 80,
+      "order" : 1,
+      "indLogic" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 1,
+      "facilityGroupCode" : 85,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : true
+    }, {
+      "facilityCode" : 561,
+      "facilityGroupCode" : 85,
+      "order" : 1,
+      "indLogic" : true,
+      "voucher" : true
+    }, {
+      "facilityCode" : 552,
+      "facilityGroupCode" : 85,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : true,
+      "voucher" : false
+    }, {
+      "facilityCode" : 557,
+      "facilityGroupCode" : 85,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : true
+    }, {
+      "facilityCode" : 565,
+      "facilityGroupCode" : 85,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : true
+    }, {
+      "facilityCode" : 295,
+      "facilityGroupCode" : 90,
+      "order" : 1,
+      "indLogic" : true,
+      "indFee" : false,
+      "voucher" : false
+    }, {
+      "facilityCode" : 5,
+      "facilityGroupCode" : 91,
+      "order" : 1,
+      "indLogic" : true,
+      "dateTo" : "2021-12-31",
+      "voucher" : false
+    } ],
+    "terminals" : [ {
+      "terminalCode" : "AEP",
+      "distance" : 7
+    }, {
+      "terminalCode" : "EZE",
+      "distance" : 33
+    } ],
+    "issues" : [ {
+      "issueCode" : "COVID",
+      "issueType" : "COVID",
+      "dateFrom" : "2020-05-15",
+      "dateTo" : "2021-12-31",
+      "order" : 1,
+      "alternative" : false
+    } ],
+    "interestPoints" : [ {
+      "facilityCode" : 50,
+      "facilityGroupCode" : 100,
+      "order" : 1,
+      "poiName" : "Aeropuerto Internacional de Ezeiza",
+      "distance" : "30600"
+    }, {
+      "facilityCode" : 30,
+      "facilityGroupCode" : 100,
+      "order" : 1,
+      "poiName" : "Aeropuerto El Palomar",
+      "distance" : "26600"
+    }, {
+      "facilityCode" : 10,
+      "facilityGroupCode" : 100,
+      "order" : 1,
+      "poiName" : "Aeroparque Jorge Newbery    ",
+      "distance" : "9200"
+    } ],
+    "images" : [ {
+      "imageTypeCode" : "HAB",
+      "path" : "08/083708/083708a_hb_ro_013.JPG",
+      "roomCode" : "DBL.EJ",
+      "roomType" : "DBL",
+      "characteristicCode" : "EJ",
+      "order" : 1,
+      "visualOrder" : 406
+    }, {
+      "imageTypeCode" : "HAB",
+      "path" : "08/083708/083708a_hb_ro_013.JPG",
+      "roomCode" : "DBL.EJ",
+      "roomType" : "DBL",
+      "characteristicCode" : "EJ",
+      "order" : 13,
+      "visualOrder" : 406
+    } ],
+    "wildcards" : [ {
+      "roomType" : "DBL.NM-QN",
+      "roomCode" : "DBL",
+      "characteristicCode" : "NM-QN",
+      "hotelRoomDescription" : {
+        "languageCode" : "ENG",
+        "content" : "1 Queen Bed Non-Smoking"
+      }
+    }, {
+      "roomType" : "DBL.BS",
+      "roomCode" : "DBL",
+      "characteristicCode" : "BS",
+      "hotelRoomDescription" : {
+        "languageCode" : "ENG",
+        "content" : "1 Queen Bed Business Room Non-Smoking"
+      }
+    }, {
+      "roomType" : "DBL.DB",
+      "roomCode" : "DBL",
+      "characteristicCode" : "DB",
+      "hotelRoomDescription" : {
+        "languageCode" : "ENG",
+        "content" : "1 Double Bed Non-Smoking"
+      }
+    }, {
+      "roomType" : "DBL.KG-NM",
+      "roomCode" : "DBL",
+      "characteristicCode" : "KG-NM",
+      "hotelRoomDescription" : {
+        "languageCode" : "ENG",
+        "content" : "1 King Bed Non-Smoking"
+      }
+    }, {
+      "roomType" : "SUI.KG-NM",
+      "roomCode" : "SUI",
+      "characteristicCode" : "KG-NM",
+      "hotelRoomDescription" : {
+        "languageCode" : "ENG",
+        "content" : "1 King Bed Suite Non-Smoking"
+      }
+    } ],
+    "web" : "http://www.hj9dejulio.com.ar/",
+    "lastUpdate" : "2021-12-13",
+    "S2C" : "3*",
+    "ranking" : 31
+  } ]
+}
