@@ -9,7 +9,7 @@ class controladorSesion {
 
         session_write_close();
     }
-
+    
     public function guardarDato() {
         session_start();
 
